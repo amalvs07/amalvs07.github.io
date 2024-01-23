@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+        integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   
+    <style>
+        section {
+            display: none;
+            margin-top: 60px;
+        }
+
+
+        .projects .carousel .card {
+      background: #3887BE;
+      border-radius: 6px;
+      padding: 25px 35px;
+      text-align: center;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    .projects .carousel .card:hover {
+      background: orange;
+    }
+    .projects .carousel .card .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .projects .carousel .card:hover .box {
+      transform: scale(1.05);
+    }
+    .projects .carousel .card .text {
+      font-size: 25px;
+      font-weight: 500;
+      margin: 10px 0 7px 0;
+    }
+    .projects .carousel .card img {
+      height: 150px;
+      width: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid orange;
+      transition: all 0.3s ease;
+    }
+    .projects .carousel .card:hover img {
+      border-color: #fff;
+    }
+    .owl-dots {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .owl-dot {
+      height: 13px;
+      width: 13px;
+      margin: 0 5px;
+      outline: none !important;
+      border-radius: 50%;
+      border: 2px solid orange !important;
+      transition: all 0.3s ease;
+    }
+    .owl-dot.active {
+      width: 35px;
+      border-radius: 14px;
+    }
+    .owl-dot.active,
+    .owl-dot:hover {
+      background: orange !important;
+    }
+    .codelink{
+        display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: #3652AD; /* GitHub color, you can change it */
+  color: #ffffff; /* White text for better contrast */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+    }
+    .codelink:hover{
+        background-color: #280274; 
+    }
+    </style>
+</head>
+
+<body>
+    <!-- header section starts -->
+    <!-- navbar starts -->
+    <header data-header>
+        <a href="/" class="logo"> Amal V S</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home" onclick="displaySection('home',event)">Home</a></li>
+                <li><a href="#about" onclick="displaySection('about',event)">About</a></li>
+                <li><a href="#education" onclick="displaySection('education',event)">Education</a></li>
+                <li><a href="#skills" onclick="displaySection('skills',event)">Skills</a></li>
+
+                <li><a href="#projects" onclick="displaySection('projects',event)">Projects</a></li>
+
+                <li><a href="#contact" onclick="displaySection('contact',event)">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- navbar ends -->
+
+    <!-- hero section starts -->
+    <section class="home" id="home" style="display: flex !important;">
+
+
+        <div class="content">
+            <h2>Hi There,<br /> I'm Amal <span>V S</span></h2>
+            <p>i am into <span class="typing"></span></p>
+            <a href="#about" class="btn" onclick="displaySection('about',event)"><span>About Me</span>
+                <i class="fas fa-arrow-circle-right"></i>
+            </a>
+            <div class="socials">
+                <ul class="social-icons">
+                    <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/amal-vs-b1aa821b3/"
+                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="github" aria-label="GitHub" href="https://github.com/amalvs07" target="_blank"><i
+                                class="fab fa-github"></i></a></li>
+
+                    <li><a class="telegram" aria-label="Telegram" href="https://t.me/Amalvs0007" target="_blank"><i
+                                class="fab fa-telegram-plane"></i></a></li>
+                    <li><a class="instagram" aria-label="Instagram" href="mailto:amalvs250@gmail.com" target="_blank"><i
+                                class="fas fa-envelope"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img draggable="false" class="tilt" src="./assets/images/propic.png" alt="">
+        </div>
+    </section>
+    <!-- hero section ends -->
+
+
+    <!-- about section starts -->
+    <section class="about" id="about">
+        <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+        <div class="row">
+
+            <div class="image">
+                <!-- <img draggable="false" class="tilt" src="./assets/images/backpic.jpg" alt=""> -->
+
+
+                <dotlottie-player src="https://lottie.host/43e72cd2-9801-4c72-9da6-9dc6478a78db/lLudgrQ40C.json"
+                    background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                    autoplay></dotlottie-player>
+
+            </div>
+            <div class="content">
+                <h3>I'm Amal</h3>
+
+
+                <p>I am a Skilled MCA graduate specializing in computer science, proficient in a variety of programming
+                    languages
+                    and technologies. Holds Master's and Bachelor's degrees in Computer Application. Experienced in
+                    HTML,
+                    CSS, JavaScript, PHP, Java, and Python. Demonstrates strong leadership qualities and effective
+                    communication skills </p>
+
+                <div class="box-container">
+
+                    <div class="box">
+                        <p><span> email : </span> amalvs250@gmail.com</p>
+                        <p><span> place : </span> Ernakulam, India - 683101</p>
+                    </div>
+                </div>
+
+                <div class="resumebtn">
+
+                    <button class="btn" onclick="window.open('./assets/AMALVS.pdf')">
+                        <span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- about section ends -->
+
+
+
+    <!-- new education starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>education</span> </h1>
+        <p class="qoute">Education is the key to unlocking the world, a passport to freedom.</p>
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2023</span>
+                <h3>Master of Computer Science</h3>
+                <p>Federal Institute of Science And Technology Angamaly | KTU</p>
+                <p style="font-weight: bolder;font-size: 18px;color:#3887BE;">71 %</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2021</span>
+                <h3>Bachelor of Computer Science</h3>
+                <p>MES College Marampally Aluva | MG</p>
+                <p style="font-weight: bolder;font-size: 18px;color:#3887BE;">66 %</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2018</span>
+                <h3>HSC | Computer Science</h3>
+                <p>S N D P HSS School Aluva | STATE</p>
+                <p style="font-weight: bolder;font-size: 18px;color:#3887BE;">84 %</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2016</span>
+                <h3>SSLC</h3>
+                <p>S N D P HSS School Aluva | STATE</p>
+                <p style="font-weight: bolder;font-size: 18px;color:#3887BE;">92 %</p>
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- new education ends  -->
+
+
+    <!-- skills section starts -->
+    <section class="skills" id="skills" style="background: #3887BE;">
+        <h2 class="heading"><i class="fas fa-laptop-code"></i>Skills &<span>Abilities</span> </h2>
+
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/html5.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>HTML 5</h3>
+
+                </div>
+
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/css3.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>CSS </h3>
+
+                </div>
+
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/javascript.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>JavaScript</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/python.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>Python</h3>
+
+                </div>
+
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/java (1).png" alt="" class="skill-icon">
+                    </div>
+                    <h3>Java</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/icons8-flutter-48.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>Flutter</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/php.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>PHP</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/node-js.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>Node JS</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/database.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>MongoDB</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/c-.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>C++</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/c.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>C</h3>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/vs-code.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>VS Code</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/git.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>Git</h3>
+
+                </div>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="./assets/images/android.png" alt="" class="skill-icon">
+                    </div>
+                    <h3>Android Studio</h3>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+    <!-- skills section ends -->
+
+    <!-- new projects section starts -->
+
+    <!-- new project section ends  -->
+    <!-- projects section starts -->
+    <section class="projects" id="projects">
+        <h2 class="heading"style="margin-bottom: 60px;"><i class="fas fa-toolbox"></i>Academic <span>Projects</span></h2>
+
+
+
+        
+            <div class="max-width" >
+             
+              <div class="carousel owl-carousel">
+                <div class="card">
+                   
+                    <div class="box">
+                      <img src="assets/images/web-design.png" alt="img">
+                      <div class="text">Rentools</div>
+                      <p>An interactive online platform for renting a variety of tools at budget-friendly rates within the
+                          local area.</p>
+                          <a href="https://github.com/amalvs07/Rent_Tools" target="_blank" class="codelink"><i
+                            class="fa-solid fa-code"></i></a>
+                    </div>
+                  </div>
+                <div class="card">
+                    <div class="box">
+                      <img src="assets/images/user-interface1.png" alt="imag">
+                      <div class="text">Status Saver</div>
+                      <p>Explore the Status Saver for WhatsApp, effortlessly saving and sharing your favorite moments with ease and style.</p>
+                      <a href="https://github.com/amalvs07/status-saver" target="_blank" class="codelink"><i
+                        class="fa-solid fa-code"></i></a>
+                    </div>
+                  </div>
+                <div class="card">
+                  <div class="box">
+                    <img src="assets/images/smartphone.png" alt="imag">
+                    <div class="text">Netflix clone</div>
+                    <p>Developed a stunning Netflix clone using Flutter for frontend, seamlessly connected to TMDB API for content integration.</p>
+                    <a href="https://github.com/amalvs07/Netflix_clone" target="_blank" class="codelink"><i
+                        class="fa-solid fa-code"></i></a>  
+                </div>
+                </div>
+                <div class="card">
+                  <div class="box">
+                    <img src="assets/images/user-interface.png" alt="imag">
+                    <div class="text">Bus Tracker</div>
+                    <p>Crafted a bus tracker app for hassle-free commuting with real-time updates and streamlined
+                        navigation.</p>
+                        <a href="https://github.com/amalvs07/College_bus_Tracker" target="_blank" class="codelink"><i
+                            class="fa-solid fa-code"></i></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="box">
+                    <img src="assets/images/smartphoned.png" alt="img">
+                    <div class="text">Smart Shopie</div>
+                    <p>Crafted an app with QR code scanner for users to compare and choose products seamlessly from
+                        diverse mall stores.</p>
+                        <a href="https://github.com/amalvs07/Smart_Shopie" target="_blank" class="codelink"><i
+                            class="fa-solid fa-code"></i></a>
+                  </div>
+                </div>
+               
+                <div class="card">
+                  <div class="box">
+                    <img src="assets/images/web.png" alt="imag2">
+                    <div class="text">Buyinat </div>
+                    <p>Discover a local online paint marketplace, offering a diverse range at budget-friendly prices for your convenience.</p>
+                    <a href="https://github.com/amalvs07/Buyaint" target="_blank" class="codelink"><i
+                        class="fa-solid fa-code"></i></a> 
+                </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                      <img src="assets/images/ux.png" alt="imag2">
+                      <div class="text">Personal PortFolio.</div>
+                      <p>Through meticulous design, my digital portfolio embodies a diverse showcase of my notable achievements and skills.</p>
+                      <a href="https://github.com/amalvs07/portfolio" target="_blank" class="codelink"><i
+                        class="fa-solid fa-code"></i></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+         
+        
+
+
+
+
+        <!-- <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="./assets/images/netflix.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Netflix clone</h4>
+                    <p>Built a Netflix clone with Flutter for the frontend, connecting to TMDB API.</p>
+                    <a href="https://github.com/amalvs07/Netflix_clone" target="_blank"><i
+                            class="fa-brands fa-codiepie"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/tracker.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Bus Tracker</h4>
+                    <p>Crafted a bus tracker app for hassle-free commuting with real-time updates and streamlined
+                        navigation.</p>
+                    <a href="https://github.com/amalvs07/College_bus_Tracker" target="_blank"><i
+                            class="fa-brands fa-codiepie"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/smart.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Smart Shopie</h4>
+                    <p>Crafted an app with QR code scanner for users to compare and choose products seamlessly from
+                        diverse mall stores.</p>
+                    <a href="https://github.com/amalvs07/Smart_Shopie" target="_blank"><i
+                            class="fa-brands fa-codiepie"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/rentools.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Rentools </h4>
+                    <p>An interactive online platform for renting a variety of tools at budget-friendly rates within the
+                        local area.</p>
+                    <a href="https://github.com/amalvs07/Rent_Tools" target="_blank"><i
+                            class="fa-brands fa-codiepie"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/buynit.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Buyinat </h4>
+                    <p> Online platform for buying a variety of paints at budget-friendly rates within the area.</p>
+                    <a href="https://github.com/amalvs07/Buyaint" target="_blank"><i
+                            class="fa-brands fa-codiepie"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="./assets/images/portfo.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>PortFolio </h4>
+                    <p>Personal PortFolio.</p>
+                    <a href="https://github.com/amalvs07/portfolio" target="_blank"><i
+                            class="fa-brands fa-codiepie"></i></a>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+
+    <!-- projects section ends -->
+
+    <!-- new footer starts  -->
+
+
+    <section class="footer" id="contact">
+        <h2 style="margin-bottom:40px;margin-top: 40px;" class="heading"><i class="fa-solid fa-link"></i> Get in
+            <span>Touch</span></h2>
+        <p style="font-size: 14px;">Thank you for visiting my personal portfolio website.Feel free to drop an email, or
+            contact me on any of the
+            social platforms
+        </p>
+        <a href="mailto:amalvs250@gmail.com" class="contact-btn" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Contact Me
+        </a>
+        <hr>
+        <div class="icons">
+            <a href="https://github.com/amalvs07" alt="Github Link" target="_blank"><i
+                    class="icon fa-brands fa-github fa-2x github" target="_blank"></i></a>
+            <a href="https://www.linkedin.com/in/amal-vs-b1aa821b3/" alt="linkedin-link" target="_blank"><i
+                    class="icon fa-brands fa-linkedin fa-2x linkedin"></i></a>
+            <a href="https://x.com/Amalvs07?t=2gEyHCnBB4k11bLEXBS9zg&s=09" class="twitter-link" target="_blank"><i
+                    class="icon fa-brands fa-x-twitter fa-2x twitter"></i></a>
+            <a href="https://t.me/Amalvs0007" alt="insta-link" target="_blank"><i
+                    class="icon fab fa-telegram-plane fa-2x insta" target="_blank"></i></a>
+        </div>
+
+        <p class="tail" style="margin-top: 40px; font-size: 13px;">© 2023-2024 | Design : <a
+                href="https://linktr.ee/SaiShankarPunna" class="tail-name" target="_blank"> Amal V S</a></p>
+    </section>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- main script  -->
+<script src="script.js"></script>
+
+<script src="https://example.com/fontawesome/v6.5.1/js/all.js" data-auto-replace-svg="nest"></script>
+
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+
+
+
+
+</html>
