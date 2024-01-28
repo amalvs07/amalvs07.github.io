@@ -1093,7 +1093,7 @@ z-index: 2;
   margin: 20px 10px;
 }
 
-.contact-btn span:nth-child(1) {
+/* .contact-btn span:nth-child(1) {
   top: 0;
   left: 0;
   width: 100%;
@@ -1164,7 +1164,7 @@ z-index: 2;
   100% {
     bottom: 100%;
   }
-}
+} */
 .icons a {
   font-size: 1.5rem;
   color: black;
